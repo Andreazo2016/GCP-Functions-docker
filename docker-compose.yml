@@ -1,0 +1,15 @@
+version: '2'
+services:
+  api:
+    build: .
+    command: npm run api
+    volumes:
+      - .:/config
+    ports:
+      - 3000:3000
+    environment:
+      USUARIO: ${USUARIO}
+      SENHA: ${SENHA}
+      GOOGLE_APPLICATION_CREDENTIALS: /config/${GOOGLE_APPLICATION_CREDENTIALS_FILE_NAME}
+      GOOGLE_CLOUD_PROJECT: ${GOOGLE_CLOUD_PROJECT}
+ 

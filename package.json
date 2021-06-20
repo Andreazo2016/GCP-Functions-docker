@@ -1,0 +1,23 @@
+{
+  "name": "forum-alura",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "api": "node /usr/src/app/api/index.js",
+    "dev": "node /api/index.js"
+  },
+  "author": "serverless.com",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-deployment-bucket": "^1.5.1",
+    "serverless-google-cloudfunctions": "^4.1.0"
+  },
+  "dependencies": {
+    "@google-cloud/bigquery": "^5.6.0",
+    "@google-cloud/pubsub": "^2.14.0",
+    "basic-auth": "^2.0.1",
+    "koa": "^2.13.1",
+    "koa-bodyparser": "^4.3.0"
+  }
+}
